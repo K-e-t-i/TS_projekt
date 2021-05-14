@@ -14,7 +14,6 @@ def write_label(x, y, text):
 
 def draw_graph(current_master_state, current_slave_state):
     plt.ion()
-    plt.clf()
     plt.figure('Procesy', figsize=(12, 8))
     for node in a:
         if node == current_master_state:
@@ -47,6 +46,7 @@ def draw_graph(current_master_state, current_slave_state):
     master_color.clear()
     slave_color.clear()
     plt.pause(0.1)
+    plt.clf()
 
 
 master_color = []
