@@ -10,4 +10,4 @@
 
 ## Schemat procesu:
 
-![Graph](GIT_foto/graf.png)
+![Graph](GIT_foto/schemat.png)
