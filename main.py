@@ -61,6 +61,8 @@ transitions_to_slave = [3]
 transitions_to_master = [3, 4]
 current_display = 'master'
 
+#Sprawdzanie przykładowej tranzycji
+check_model(a, "Obiekt wykryty na taśmie 2", "Stacja niegotowa do pracy")
 
 print('                    PROJEKT')
 print('-------------------------------------------------')

@@ -2,6 +2,25 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 
+def check_model(graph, state_source, state_target):
+    try:
+        graph.nodes[state_source]
+    except KeyError:
+        print('BŁĄD: Nieistniejący stan wejściowy')
+        return
+
+    try:
+        graph.nodes[state_target]
+    except KeyError:
+        print('BŁĄD: Nieistniejący stan wyjściowy')
+        return
+
+    path = nx.shortest_path(G=graph,
+                            source=state_source,
+                            target=state_target)
+    print(path)
+
+
 def write_label(x, y, text):
     plt.text(x, y, text,
              color='green',
