@@ -14,7 +14,7 @@
 
 ## Wizualizacja
 
-[![TS](GIT_foto/ts_sim.png)](https://www.youtube.com/watch?v=dx4ztecXt9A)
+[![TS](https://yt-embed.herokuapp.com/embed?v=dx4ztecXt9A)](https://www.youtube.com/watch?v=dx4ztecXt9A)
 
 
 ## Instalacja oprogramowania
