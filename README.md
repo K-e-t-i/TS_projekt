@@ -8,6 +8,41 @@
 * Piotr Marciniak
 * Szymon Menzel
 
-## Schemat procesu:
+## Schemat procesu
 
 ![Graph](GIT_foto/schemat.png)
+
+## Wizualizacja
+
+[![TS](GIT_foto/ts_sim.png)](https://www.youtube.com/watch?v=dx4ztecXt9A)
+
+
+## Instalacja oprogramowania
+Upewnij się, że posiadasz zainstalowany ROS Noetic. Następnie przejdź do swojego obszaru roboczego i zainstaluj odpowiednie komponenty:
+```
+$ cd ~/catkin_ws/src
+$ sudo apt-get install ros-noetic-moveit-commander ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control ros-noetic-moveit-ros-planning-interface ros-noetic-moveit-planners-ompl ros-noetic-joint-trajectory-controller ros-noetic-tf-conversions ros-noetic-ur-client-library ros-noetic-industrial-robot-status-interface ros-noetic-position-controllers ros-noetic-robot-state-publisher ros-noetic-tf2-tools ros-noetic-moveit-simple-controller-manager
+$ pip3 install transforms3d
+```
+Skopiuj podane repozytoria:
+```
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
+$ git clone -b calibration_devel https://github.com/fmauch/universal_robot
+$ git clone https://github.com/K-e-t-i/TS_projekt/tree/master/state_machine_simulation
+```
+Wróć do obszaru roboczego oraz skompiluj je:
+```
+$ source devel/setup.sh
+$ catkin_make
+```
+
+## Uruchomienie programu
+
+Aby uruchomić skrypty, należy skorzystać z poniższych poleceń:
+
+```
+$ roslaunch state_machine_simulation myRobot.launch 
+$ roslaunch ur3_moveit_config ur3_moveit_planning_execution.launch
+$ rosrun state_machine_simulation gazebo_manager.py
+```
