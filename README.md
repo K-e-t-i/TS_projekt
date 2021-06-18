@@ -28,8 +28,7 @@ Skopiuj podane repozytoria:
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
-$ git clone https://github.com/K-e-t-i/TS_projekt/tree/master/state_machine_simulation
-$ git clone https://github.com/K-e-t-i/TS_projekt/tree/master/universal_robot
+$ git clone https://github.com/K-e-t-i/TS_projekt
 ```
 
 Wróć do obszaru roboczego oraz skompiluj je:
