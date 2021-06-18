@@ -28,9 +28,10 @@ Skopiuj podane repozytoria:
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
-$ git clone -b calibration_devel https://github.com/fmauch/universal_robot
 $ git clone https://github.com/K-e-t-i/TS_projekt/tree/master/state_machine_simulation
+$ git clone https://github.com/K-e-t-i/TS_projekt/tree/master/universal_robot
 ```
+
 Wróć do obszaru roboczego oraz skompiluj je:
 ```
 $ source devel/setup.sh
@@ -39,10 +40,15 @@ $ catkin_make
 
 ## Uruchomienie programu
 
-Aby uruchomić skrypty, należy skorzystać z poniższych poleceń:
+Aby uruchomić wizualizację, należy skorzystać z poniższych poleceń:
 
 ```
 $ roslaunch state_machine_simulation myRobot.launch 
 $ roslaunch ur3_moveit_config ur3_moveit_planning_execution.launch
 $ rosrun state_machine_simulation gazebo_manager.py
+```
+Wizualizacja automatu oraz funkcji sprawdzającej odbywa się poprzez uruchomienie skryptu:
+
+```
+python3 main.py
 ```
