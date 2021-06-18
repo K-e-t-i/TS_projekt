@@ -12,7 +12,6 @@ from transforms3d import quaternions
 import tf
 import numpy as np
 import gazebo_manager
-roslib.load_manifest('tf_tutorial')
 
 def pose_to_matrix(pose):
     """geometry_msgs.msg.Pose to 4x4 matrix"""
