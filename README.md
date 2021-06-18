@@ -30,6 +30,7 @@ $ cd ~/catkin_ws/src
 $ git clone https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
 $ git clone https://github.com/K-e-t-i/TS_projekt
 ```
+Otwórz folder *TS_projekt*, przenieś foldery *state_machine_simulation* oraz *universal_robot* do folderu *src*.
 
 Wróć do obszaru roboczego oraz skompiluj je:
 ```
