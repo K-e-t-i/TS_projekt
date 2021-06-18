@@ -47,7 +47,7 @@ $ roslaunch state_machine_simulation myRobot.launch
 $ roslaunch ur3_moveit_config ur3_moveit_planning_execution.launch
 $ rosrun state_machine_simulation gazebo_manager.py
 ```
-Wizualizacja automatu oraz funkcji sprawdzającej odbywa się poprzez uruchomienie skryptu:
+Wizualizacja automatu oraz funkcji sprawdzającej odbywa się poprzez uruchomienie skryptu *main.py*. Należy pobrać oba pliki *main.py* oraz *nx.py*, a następnie urchomić poleceniem:
 
 ```
 python3 main.py
