@@ -33,7 +33,7 @@ $ chmod +x TS_projekt/state_machine_simulation/scripts/gazebo_manager.py
 
 Wróć do obszaru roboczego oraz skompiluj je:
 ```
-$ source devel/setup.sh
+$ source devel/setup.bash
 $ catkin_make
 ```
 
