@@ -28,9 +28,7 @@ Skopiuj podane repozytoria:
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/K-e-t-i/TS_projekt
-$ cd TS_projekt
-$ git clone https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
-$ chmod +x state_machine_simulation/scripts/gazebo_manager.py
+$ chmod +x TS_projekt/state_machine_simulation/scripts/gazebo_manager.py
 ```
 
 Wróć do obszaru roboczego oraz skompiluj je:
